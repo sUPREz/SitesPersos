@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Site Persos</title>
+  <link rel="icon" href="imgs/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="Styles.css" type="text/css" />  
+  <!-- jQuery !-->
+  <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+</head>
+<script>
+var sites = { 1: {name:'Bookmarks',         folder:'Bookmarks',         background:'thumbnail_none.png',                favicon:'favicon_Bookmarks.png'} ,
+              2: {name:'Recettes !!',       folder:'Cuisine',           background:'thumbnail_Cuisine.png',             favicon:'favicon_Cuisine.png'} ,
+              3: {name:'Life Achievements', folder:'LifeAchievements',  background:'thumbnail_LifeAchievements.png',    favicon:'favicon_LifeAchievements.png'} ,
+              4: {name:'Series !!',         folder:'Series',            background:'thumbnail_Series.png',              favicon:'favicon_Series.png'} ,
+              5: {name:'SexySet',           folder:'SexySet',           background:'thumbnail_SexySet.png',             favicon:'favicon_SexySet.png'} ,
+              6: {name:'Sauvegardes !',     folder:'sql_backup',        background:'thumbnail_sql_Backup.png',          favicon:'favicon_sql_Backup.png'} ,
+              7: {name:'Movies',            folder:'Movies',            background:'thumbnail_none.png',                favicon:'favicon_Movies.png'} ,
+              8: {name:'FIFA',              folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,
+              9: {name:'Arkane',            folder:'../Arkane',         background:'thumbnail_Arkane.png',                favicon:'favicon_Arkane.gif'}
+            };
+var tools = { 1: {name:'phpMyAdmin',        folder:'../phpMyAdmin/',    background:'thumbnail_phpMyAdmin.png',          favicon:'favicon_phpMyAdmin.ico'} ,
+              2: {name:'jQuery postIt',     folder:'_Tools/postIt/',    background:'thumbnail_postIt.png',              favicon:'favicon_postIt.png'} ,
+              3: {name:'FIFA Admin',        folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,
+              4: {name:'Arkane Admin',  folder:'../Arkane/?Area=Admin', background:'thumbnail_Arkane.png',              favicon:'favicon_Arkane.gif'}
+            };
+console.log( sites );
+
+$(document).ready(function(){
+  for(var i in sites){
+    $('div.sites').append('<div class="site"><a target="_blank" href="../'+sites[i]['folder']+'"><div class="thumbnail" style="background-image:url(imgs/'+sites[i]['background']+')"><div class="overlay"></div><div class="favicon" style="background-image:url(imgs/'+sites[i]['favicon']+')"></div></div><div class="titre">'+sites[i]['name']+'</div></a></div>');
+  }
+  for(var i in tools){
+    $('div.tools').append('<div class="tool"><a target="_blank" href="../'+tools[i]['folder']+'"><div class="thumbnail" style="background-image:url(imgs/'+tools[i]['background']+')"><div class="overlay"></div><div class="favicon" style="background-image:url(imgs/'+tools[i]['favicon']+')"></div></div><div class="titre">'+tools[i]['name']+'</div></a></div>');
+  }
+
+  $('div.sites div.site a , div.tools div.tool a').hover( function(){
+    $(this).find('div.overlay').stop(true,false).animate({ opacity : 0 } , 200);
+  } , function(){
+    $(this).find('div.overlay').stop(true,false).animate({ opacity : 0.9 } , 200);
+  });
+
+});
+</script>
+<style>
+body{
+  margin:0px;
+  background-color:#2C2C2C;
+  font-family: Calibri;
+}
+  div.sites,
+  div.tools{
+    width: 1000px;
+    background-color: #262627;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  div.tools{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  div.sites div.site,
+  div.tools div.tool{
+    width: 220px;
+    height: 152px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+
+  }
+    div.sites div.titre_section,
+    div.tools div.titre_section{
+      color: #444;
+      font-weight: bold;
+      font-size: 30px;
+      font-style: italic;
+      text-align: right;
+      margin-top: -10px;
+      margin-right: 10px;
+      margin-bottom: -10px;
+    }
+
+    div.sites div.site a,
+    div.tools div.tool a{
+      width: 220px;
+      color: #FFF;
+    }
+      div.sites div.site a div.thumbnail,
+      div.tools div.tool a div.thumbnail{
+        width: 218px;
+        height: 130px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        /* background-image: url(thumbnail_cuisine.png); */
+        position: relative;
+      }
+        div.sites div.site a div.thumbnail div.overlay,
+        div.tools div.tool a div.thumbnail div.overlay{
+          background-color: #000;
+          position: aboslute;
+          width: 100%;
+          height: 100%;
+          opacity:0.9;
+        }
+        div.sites div.site a div.thumbnail div.overlay.hover,
+        div.tools div.tool a div.thumbnail div.overlay.hover{
+          opacity:0;
+        }
+        div.sites div.site a div.thumbnail div.favicon,
+        div.tools div.tool a div.thumbnail div.favicon{
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          background-size: 100%;
+        }
+      div.sites div.site a div.titre,
+      div.tools div.tool a div.titre{
+        width: 218px;
+        position: absolute;
+        bottom: 0px;
+
+      }
+  div.links{
+    height: 30px;
+    width: 1000px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    /*background-color: #262627;*/
+    background: -webkit-linear-gradient(top, #404040 ,#2C2C2C );
+  }
+    div.links ul{
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+    }
+      div.links ul li{
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        margin: 0px -2px 0px -3px;
+        height: 24px;
+        position: relative;
+        top: 0px;
+        border-right: 1px solid #000;
+        border-top: 1px solid #404040;
+        border-left: 1px solid #404040;
+        margin-left: -2px;
+        /*border: 1px solid #000;*/
+
+        /* background: -webkit-linear-gradient(top, #4f708f 0%,#88b5dc 100%); */ /* Hover */
+      }
+      div.links ul li:hover{
+        background: -webkit-linear-gradient(top, #4f708f 0%,#88b5dc 100%);
+        border-right: 1px solid #88b5dc;
+        border-top: 1px solid #88b5dc;
+        border-left: 1px solid #88b5dc;
+      }
+      div.links ul li:hover a:hover{
+        color: #FFF;
+        text-decoration: none;
+      }
+
+  a{
+    color: #FFF;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #0066FF;
+    text-decoration: underline;
+  }
+
+  div.header{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 85px;
+    font-size: 60px;
+    padding-top: 15px;
+    color: #BBBBBB;
+  }
+
+</style>
+
+<body>
+  <div class="links">
+    <ul>
+      <li><a href="http://www.php.net" target="_blank">php.net</a></li>
+      <li><a href="http://www.jquery.com" target="_blank">jQuery</a></li>
+      <li><a href="http://www.jqueryui.com" target="_blank">jQuery UI</a></li>
+      <li><a href="http://www.appelsiini.net/projects/jeditable" target="_blank">jQuery jEditable</a></li>
+      <li><a href="http://webspirited.com/tagit/docs.html" target="_blank">jQuery tagIt</a></li>
+    </ul>
+  </div>
+  <div class="header">Sites Persos !</div>
+  <div class="sites" style="">
+    <div class="titre_section">Sites</div>
+  <!--
+    <div class="site"><a href="#"><div class="thumbnail"><div class="overlay"></div><div class="favicon"></div></div><div class="titre">Caca</div></a></div>
+  !-->
+  </div>
+  <!--
+  <ul>
+    <li><a href="../Series/" target="_blank">Series !</a></li>
+    <li><a href="../Movies/" target="_blank">Movies</a></li>
+    <li><a href="../Cuisine/" target="_blank">Recettes !!</a></li>
+    <li><a href="../sql_backup/" target="_blank">Sauvegardes !</a></li>
+    <li><a href="../Bookmarks/" target="_blank">Bookmarks !</a></li>
+    <li><a href="../SexySet/" target="_blank">Sexy Set</a></li>
+    <li><a href="../LifeAchievements/" target="_blank">Life Achievements</a></li>
+  </ul>
+  !-->
+  <div class="tools">
+    <div class="titre_section">Tools</div>
+  <!--
+    <ul>
+      <li><a href="../../phpmyadmin/" target="_blank">phpMyAdmin</a></li>
+      <li><a href="../_Tools/_TextEditor" target="_blank">TextEditor</a></li>
+    </ul>
+  !-->
+  </div>
+
+</body>
+
+</html>
