@@ -11,20 +11,22 @@
   <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
 </head>
 <script>
-var sites = { 1: {name:'Bookmarks',         folder:'Bookmarks',         background:'thumbnail_none.png',                favicon:'favicon_Bookmarks.png'} ,
-              2: {name:'Recettes !!',       folder:'Cuisine',           background:'thumbnail_Cuisine.png',             favicon:'favicon_Cuisine.png'} ,
-              3: {name:'Life Achievements', folder:'LifeAchievements',  background:'thumbnail_LifeAchievements.png',    favicon:'favicon_LifeAchievements.png'} ,
-              4: {name:'Series !!',         folder:'Series',            background:'thumbnail_Series.png',              favicon:'favicon_Series.png'} ,
-              5: {name:'SexySet',           folder:'SexySet',           background:'thumbnail_SexySet.png',             favicon:'favicon_SexySet.png'} ,
-              6: {name:'Sauvegardes !',     folder:'sql_backup',        background:'thumbnail_sql_Backup.png',          favicon:'favicon_sql_Backup.png'} ,
-              7: {name:'Movies',            folder:'Movies',            background:'thumbnail_none.png',                favicon:'favicon_Movies.png'} ,
-              8: {name:'FIFA',              folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,
-              9: {name:'Arkane',            folder:'../Arkane',         background:'thumbnail_Arkane.png',                favicon:'favicon_Arkane.gif'}
+var sites = { 1: {name:'Recettes !!',       folder:'Cuisine',           background:'thumbnail_Cuisine.png',             favicon:'favicon_Cuisine.png'} ,
+              2: {name:'Life Achievements', folder:'LifeAchievements',  background:'thumbnail_LifeAchievements.png',    favicon:'favicon_LifeAchievements.png'} ,
+              3: {name:'Series v2.1 !!',    folder:'Series_v2.1',       background:'thumbnail_Series.png',              favicon:'favicon_Series.png'} ,
+			  4: {name:'Sauvegardes !',     folder:'sql_backup',        background:'thumbnail_sql_Backup.png',          favicon:'favicon_sql_Backup.png'} ,
+			  5: {name:'Arkane',            folder:'../Arkane',         background:'thumbnail_Arkane.png',              favicon:'favicon_Arkane.gif'}
             };
+var sites_en_dev = {  1: {name:'Bookmarks',         folder:'Bookmarks',         background:'thumbnail_none.png',                favicon:'favicon_Bookmarks.png'} ,
+					  2: {name:'SexySet',           folder:'SexySet',           background:'thumbnail_SexySet.png',             favicon:'favicon_SexySet.png'} ,
+					  //3: {name:'Movies',            folder:'Movies',            background:'thumbnail_none.png',                favicon:'favicon_Movies.png'} ,
+					  3: {name:'FIFA',              folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,					  
+					  4: {name:'FIFA Admin',        folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,
+					  5: {name:'Series v3.0 !!!',   folder:'Series_v3_mockup',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,					  
+            };			
 var tools = { 1: {name:'phpMyAdmin',        folder:'../phpMyAdmin/',    background:'thumbnail_phpMyAdmin.png',          favicon:'favicon_phpMyAdmin.ico'} ,
-              2: {name:'jQuery postIt',     folder:'_Tools/postIt/',    background:'thumbnail_postIt.png',              favicon:'favicon_postIt.png'} ,
-              3: {name:'FIFA Admin',        folder:'FIFA',              background:'thumbnail_none.png',                favicon:'favicon_FIFA.png'} ,
-              4: {name:'Arkane Admin',  folder:'../Arkane/?Area=Admin', background:'thumbnail_Arkane.png',              favicon:'favicon_Arkane.gif'}
+              2: {name:'jQuery postIt',     folder:'_Tools/postIt/',    background:'thumbnail_postIt.png',              favicon:'favicon_postIt.png'} ,              
+              3: {name:'Arkane Admin',  folder:'../Arkane/?Area=Admin', background:'thumbnail_Arkane.png',              favicon:'favicon_Arkane.gif'}
             };
 console.log( sites );
 
@@ -32,11 +34,14 @@ $(document).ready(function(){
   for(var i in sites){
     $('div.sites').append('<div class="site"><a target="_blank" href="../'+sites[i]['folder']+'"><div class="thumbnail" style="background-image:url(imgs/'+sites[i]['background']+')"><div class="overlay"></div><div class="favicon" style="background-image:url(imgs/'+sites[i]['favicon']+')"></div></div><div class="titre">'+sites[i]['name']+'</div></a></div>');
   }
+  for(var i in sites_en_dev){
+    $('div.sites_en_dev').append('<div class="site_en_dev"><a target="_blank" href="../'+sites_en_dev[i]['folder']+'"><div class="thumbnail" style="background-image:url(imgs/'+sites_en_dev[i]['background']+')"><div class="overlay"></div><div class="favicon" style="background-image:url(imgs/'+sites_en_dev[i]['favicon']+')"></div></div><div class="titre">'+sites_en_dev[i]['name']+'</div></a></div>');
+  }  
   for(var i in tools){
     $('div.tools').append('<div class="tool"><a target="_blank" href="../'+tools[i]['folder']+'"><div class="thumbnail" style="background-image:url(imgs/'+tools[i]['background']+')"><div class="overlay"></div><div class="favicon" style="background-image:url(imgs/'+tools[i]['favicon']+')"></div></div><div class="titre">'+tools[i]['name']+'</div></a></div>');
   }
 
-  $('div.sites div.site a , div.tools div.tool a').hover( function(){
+  $('div.sites div.site a , div.sites_en_dev div.site_en_dev a , div.tools div.tool a').hover( function(){
     $(this).find('div.overlay').stop(true,false).animate({ opacity : 0 } , 200);
   } , function(){
     $(this).find('div.overlay').stop(true,false).animate({ opacity : 0.9 } , 200);
@@ -51,6 +56,7 @@ body{
   font-family: Calibri;
 }
   div.sites,
+  div.sites_en_dev,
   div.tools{
     width: 1000px;
     background-color: #262627;
@@ -61,11 +67,13 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  div.sites_en_dev,
   div.tools{
     margin-top: 30px;
     margin-bottom: 30px;
   }
   div.sites div.site,
+  div.sites_en_dev div.site_en_dev,
   div.tools div.tool{
     width: 220px;
     height: 152px;
@@ -75,6 +83,7 @@ body{
 
   }
     div.sites div.titre_section,
+    div.sites_en_dev div.titre_section,
     div.tools div.titre_section{
       color: #444;
       font-weight: bold;
@@ -87,11 +96,13 @@ body{
     }
 
     div.sites div.site a,
+    div.sites_en_dev div.site_en_dev a,
     div.tools div.tool a{
       width: 220px;
       color: #FFF;
     }
       div.sites div.site a div.thumbnail,
+      div.sites_en_dev div.site_en_dev a div.thumbnail,
       div.tools div.tool a div.thumbnail{
         width: 218px;
         height: 130px;
@@ -101,6 +112,7 @@ body{
         position: relative;
       }
         div.sites div.site a div.thumbnail div.overlay,
+        div.sites_en_dev div.site_en_dev a div.thumbnail div.overlay,
         div.tools div.tool a div.thumbnail div.overlay{
           background-color: #000;
           position: aboslute;
@@ -109,10 +121,12 @@ body{
           opacity:0.9;
         }
         div.sites div.site a div.thumbnail div.overlay.hover,
+        div.sites_en_dev div.site_en_dev a div.thumbnail div.overlay.hover,
         div.tools div.tool a div.thumbnail div.overlay.hover{
           opacity:0;
         }
         div.sites div.site a div.thumbnail div.favicon,
+        div.sites_en_dev div.site_en_dev a div.thumbnail div.favicon,
         div.tools div.tool a div.thumbnail div.favicon{
           width: 25px;
           height: 25px;
@@ -122,6 +136,7 @@ body{
           background-size: 100%;
         }
       div.sites div.site a div.titre,
+      div.sites_en_dev div.site_en_dev a div.titre,
       div.tools div.tool a div.titre{
         width: 218px;
         position: absolute;
@@ -208,10 +223,27 @@ body{
   <div class="header">Sites Persos !</div>
   <div class="sites" style="">
     <div class="titre_section">Sites</div>
-  <!--
-    <div class="site"><a href="#"><div class="thumbnail"><div class="overlay"></div><div class="favicon"></div></div><div class="titre">Caca</div></a></div>
-  !-->
+    <!--
+      <div class="site"><a href="#"><div class="thumbnail"><div class="overlay"></div><div class="favicon"></div></div><div class="titre">Caca</div></a></div>
+    !-->
   </div>
+  
+  <div class="tools">
+    <div class="titre_section">Tools</div>
+  <!--
+    <ul>
+      <li><a href="../../phpmyadmin/" target="_blank">phpMyAdmin</a></li>
+      <li><a href="../_Tools/_TextEditor" target="_blank">TextEditor</a></li>
+    </ul>
+  !-->
+  </div> 
+ 
+  <div class="sites_en_dev" style="">
+    <div class="titre_section">Sites en Dev</div>
+    <!--
+      <div class="site"><a href="#"><div class="thumbnail"><div class="overlay"></div><div class="favicon"></div></div><div class="titre">Caca</div></a></div>
+    !-->
+  </div>  
   <!--
   <ul>
     <li><a href="../Series/" target="_blank">Series !</a></li>
@@ -223,15 +255,6 @@ body{
     <li><a href="../LifeAchievements/" target="_blank">Life Achievements</a></li>
   </ul>
   !-->
-  <div class="tools">
-    <div class="titre_section">Tools</div>
-  <!--
-    <ul>
-      <li><a href="../../phpmyadmin/" target="_blank">phpMyAdmin</a></li>
-      <li><a href="../_Tools/_TextEditor" target="_blank">TextEditor</a></li>
-    </ul>
-  !-->
-  </div>
 
 </body>
 
