@@ -1,0 +1,513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_",
+				"_NONE"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"Remove",
+				"RemoveEpisode"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"Episode",
+				"EpisodeName"
+			],
+			[
+				"json",
+				"json_response"
+			],
+			[
+				"TVD",
+				"TVDBv2"
+			],
+			[
+				"curl_get",
+				"curl_getinfo"
+			],
+			[
+				"postfi",
+				"postfields"
+			],
+			[
+				"To",
+				"TorrentAPI"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"print_",
+				"print_r_pre"
+			],
+			[
+				"User",
+				"userID"
+			],
+			[
+				"Key",
+				"Key_"
+			],
+			[
+				"thetv",
+				"thetvdb"
+			],
+			[
+				"Query",
+				"QueryName"
+			],
+			[
+				"Update",
+				"UpdateDB"
+			],
+			[
+				"print_r",
+				"print_r_pre"
+			],
+			[
+				"Ser",
+				"SeriesName"
+			],
+			[
+				"Series",
+				"SeriesName"
+			],
+			[
+				"Serie",
+				"SeriesName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.htm",
+			"settings":
+			{
+				"buffer_size": 10736,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/W/Sites/Series_v4/php_classes/MISC/class_DB.php",
+		"/W/Sites/Series_v4/php_ajax/SUBS/class_TVsubtitles.php",
+		"/W/Sites/Series_v4/php_cron/CRON/class_Cron_ExternalIDs.php",
+		"/W/Sites/Series_v4/php_classes/DB/class_Serie.php",
+		"/W/Sites/Series_v4/php_cron/autoUpdate.php",
+		"/W/Sites/Series_v4/php_cron/CRON/class_Cron_UserFavorites.php",
+		"/W/Sites/Series_v4/php_ajax/SUBS/class_Addic7ed.php",
+		"/W/Sites/Series_v4/php_ajax/SUBS/class_Podnapisi.php",
+		"/W/Sites/Series_v4/php_ajax/SUBS/class_Podnapisi_DiskStation_Dec-29-0116-2017_Conflict.php",
+		"/W/Sites/Series_v4/php_ajax/GetContent.php",
+		"/W/Sites/Series_v4/php_ajax/DownloadTable.php",
+		"/W/Sites/Series_v4/php_classes/MISC/class_Content.php",
+		"/W/Sites/Series_v4/php_classes/MISC/class_XMLToolBox.php",
+		"/W/Sites/Series_v4/php_ajax/SUBS/class_SousTitresEu.php",
+		"/W/Sites/Series_v4/page_admin.php",
+		"/W/Sites/Series_v4/xml/Addic7edIDs.xml",
+		"/W/Sites/Series_v4/jQuery.custom/jQuery.EpisodeLinks.js",
+		"/W/Sites/Series_v4/php_plugings/simple_html_dom.php",
+		"/W/Sites/Series_v4/xml/TVsubtitlesIDs.xml",
+		"/W/Sites/Series_v4/Series_v4.sublime-workspace",
+		"/W/Sites/Series_v4/dev.php",
+		"/W/Sites/Series_v4/php_classes/MISC/class_DBUpdate.php",
+		"/W/Sites/Series_v4/index.php",
+		"/W/Sites/Series_v4/php_ajax/TORRENT/class_TorrentAPI.php",
+		"/W/Sites/Series_v4/php_ajax/TORRENT/class_RARBG.php",
+		"/W/Sites/Series_v4/page_serie.php",
+		"/W/Sites/Series_v4/jQuery.custom/jQuery.UpdateDB.js",
+		"/W/Sites/Series_v4/style.css",
+		"/W/Sites/Series_v4/php_classes/DB/class_Episode.php",
+		"/W/Sites/Series_v4/php_ajax/UpdateDB.php",
+		"/W/Sites/Series_v4/page_calendar.php",
+		"/W/Sites/Series_v4/page_serielist.php",
+		"/W/Sites/Series_v4/php_classes/MISC/class_TVDBv2.php",
+		"/W/Sites/Series_v4/php_classes/LIST/class_SerieList.php",
+		"/W/Sites/Series_v4/php_cron/CRON/class_Cron_Series.php",
+		"/W/Sites/Series_v4/php_ajax/THETVDB/class_theTVDB.php",
+		"/W/Sites/Series_v4/php_ajax/THETVDB/class_theTVDBTableItem.php",
+		"/W/Sites/Series_v4/jQuery.custom/jQuery.theTVDBUpdateUserFavorites.js",
+		"/W/Sites/Series_v4/php_config/php_functions.php",
+		"/W/Sites/Series_v4/page_search.php",
+		"/W/Sites/Series_v4/php_ajax/theTVDBSearch.php",
+		"/W/Sites/Series_v4/php_ajax/theTVDBUpdateUserFavorites.php",
+		"/W/Sites/Series_v4/php_config/php_config.php",
+		"/W/Sites/Series_v4/php_cron/cron_Series_Log_DiskStation_Dec-22-2159-2016_Conflict.txt",
+		"/W/Sites/Series_v4/php_classes/DB/class_Season.php",
+		"/W/Sites/Series_v4/php_classes/DB/class_User.php",
+		"/W/Sites/Series_v4/php_classes/LIST/class_EpisodeList.php",
+		"/W/Sites/Series_v4/php_classes/LIST/class_UserList.php",
+		"/W/Sites/Series_v4/xml/series_full/123581_full.xml",
+		"/W/Sites/Series_v4/php_classes/DB/class_Serie_Old.php",
+		"/W/Sites/Series_v4/xml/series_full/248868_full_BEEFALO_févr.-27-033919-2017_Conflict.xml",
+		"/W/Sites/Series_v4/xml/series_full/121361_full.xml",
+		"/W/Sites/Series_v4/php_config/php_require.php",
+		"/W/Sites/Series_v4/php_config/php_functions_BEEFALO_févr.-24-003636-2016_Conflict.php",
+		"/W/Sites/Series_v3/php_classes/MISC/class_Content.php",
+		"/W/Sites/Series_v3/php_classes/DB/class_Serie.php",
+		"/W/Sites/Series_v3/php_classes/DB/class_Episode.php",
+		"/W/Sites/Series_v3/page_calendar.php",
+		"/W/Sites/Series_v3/php_ajax/TORRENT/class_KickAssTorrent.php",
+		"/W/Sites/Series_v3/php_ajax/GetContent.php",
+		"/W/Sites/Series_v3/php_ajax/TORRENT/class_TorrentAPI.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_Addic7ed.php",
+		"/W/Sites/Series_v3/php_classes/LIST/class_EpisodeList.php",
+		"/W/Sites/Series_v3/php_cron/CRON/class_Cron_Series.php",
+		"/W/Sites/Series_v3/xml/_series_full/121361_full.xml",
+		"/W/Sites/Series_v3/php_classes/MISC/class_DB.php",
+		"/W/Sites/Series_v3/php_ajax/TORRENT/class_RARBG.php",
+		"/W/Sites/Series_v3/php_ajax/TORRENT/class_DownloadTableItem.php",
+		"/W/Sites/Series_v3/php_config/php_functions.php",
+		"/W/Sites/Series_v3/php_plugings/simple_html_dom.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_Addic7ed_DiskStation_Aug-31-1451-2016_Conflict.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_Addic7ed_BEEFALO_avr.-28-211143-2016_Conflict.php",
+		"/W/Sites/Series_v3/php_ajax/DownloadTable.php",
+		"/W/Sites/Series_v3/php_ajax/TORRENT/class_PirateBay.php",
+		"/W/Sites/Series_v3/php_cron/autoUpdate.php",
+		"/W/Sites/Series_v3/page_serie.php",
+		"/W/Sites/Series_v3/php_cron/cron_ExternalIDs_Log_BEEFALO_avr.-28-205911-2016_Conflict.txt",
+		"/W/Sites/Series_v3/imgs/FileMethodTVDB.png",
+		"/W/Sites/Series_v3/php_classes/DB/class_Serie_BEEFALO_févr.-24-003336-2016_Conflict.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_SousTitresEu.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_TVsubtitles.php",
+		"/W/Sites/Series_v3/page_serie_BEEFALO_févr.-24-003503-2016_Conflict.php",
+		"/W/Sites/Series_v3/php_ajax/SUBS/class_Addic7ed_BEEFALO_févr.-24-003640-2016_Conflict.php",
+		"/W/Sites/Series_v3/jQuery.custom/jQuery.EpisodeLinksFrame.js",
+		"/W/Sites/Series_v3/php_cron/CRON/class_Cron_UserFavorites.php",
+		"/W/Sites/Series_v3/php_classes/MISC/class_XMLToolBox.php",
+		"/W/Sites/Series_v3/index.php",
+		"/C/Marmalade/8.1/examples/GameTutorial/Lua/Stage2/resources/fonts/Default.fnt",
+		"/W/Sites/Series_v3/xml/series_full/248868_full.xml",
+		"/W/Sites/Series_v3/xml/series_full/248836_full.xml",
+		"/W/Sites/Series_v3/xml/series_full/248735_full.xml",
+		"/W/Sites/Series_v3/xml/series_full/248741_full.xml",
+		"/W/Sites/Series_v3/xml/series_full/95451_full.xml",
+		"/W/Sites/Series_v3/xml/series_full/237831_full.xml",
+		"/W/Sites/Series_v3/xml/series_base/237831_base.xml",
+		"/W/Sites/Series_v3/xml/TVsubtitlesIDs.xml",
+		"/W/Sites/Series_v3/php_classes/DB/class_Season.php",
+		"/W/Sites/Series_v3/php_cron/CRON/class_Cron_ExternalIDs.php",
+		"/W/Sites/Series_v3/page_admin.php",
+		"/W/Sites/Series_v3/jQuery.custom/jQuery.EpisodeLinks.js",
+		"/W/Sites/Series_v3/xml/_UserFavorite.xml",
+		"/W/Sites/Series_v3/page_serielist.php",
+		"/W/Sites/Series_v3/style.css",
+		"/W/Sites/Series_v3/php_classes/LIST/class_SerieList.php",
+		"/W/Sites/Series_v3/newfile.txt",
+		"/W/Sites/Series_v3/Series_v3.sublime-project",
+		"/W/Sites/Series_v3/php_cron/CRON/class_Cron_SerieUpdate.php",
+		"/W/Sites/Series_v3/php_config/php_config.php",
+		"/W/Sites/Series_v3/php_cron/class_Cron_SerieUpdate.php",
+		"/W/Sites/Series_v2.1/Datas/_UserFavorite.xml",
+		"/W/Sites/Series_v3/php_classes/DB/class_Serie_Old.php",
+		"/W/Sites/Series_v3/php_config/php_require.php",
+		"/W/Sites/Series_v3/xml/series_base/121361_base.xml",
+		"/W/Sites/Series_v3/php_ajax/theTVDBSearch.php",
+		"/W/Sites/Series_v3/php_classes/DB/class_Serie2.php",
+		"/W/Sites/Series_v3/php_ajax/THETVDB/class_theTVDB.php",
+		"/W/Sites/Series_v3/jQuery.custom/jQuery.theTVDBSearch.js",
+		"/W/Sites/Series_v3/jQuery.custom/jQuery.theTVDBUpdateUserFavorites.js",
+		"/W/Sites/Series_v3/php_ajax/theTVDBUpdateUserFavorites.php",
+		"/W/Sites/Series_v3/php_ajax/THETVDB/class_theTVDBTableItem.php",
+		"/W/Sites/Series_v3/Series_v3.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"W:\\Sites\\Series_v4",
+			"W:\\Sites\\Series_v3"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"19",
+			"GetDownloadLink",
+			"$this->SerieID",
+			"GetID",
+			"Final Ep Count=",
+			"SimpleXMLElement",
+			"DownloadTable",
+			"GetUsualEpisodeNumber",
+			"Type",
+			"XMLToolBox",
+			"Summer",
+			"Wet Hot American Summer",
+			"three",
+			"kaame",
+			"pepl",
+			"foo",
+			"johns",
+			"Jean-Claude",
+			">V <",
+			"Genius",
+			"House ",
+			"Cosmos: ",
+			"Cosmos: A Spacetime Odyssey",
+			"the river",
+			"plaintext",
+			"simple_html_dom.php",
+			"him &amp;amp; her",
+			"Genius",
+			"The Messengers",
+			"Cosmos",
+			"Cosmos: A Spacetime Odyssey",
+			"Wet Hot American Summer",
+			"Him",
+			"Him & Her",
+			"Revolution",
+			"Returned",
+			"Boss",
+			"Boss ",
+			"Black Mirror",
+			"Invincibles",
+			"Platan",
+			"Platane ",
+			"The River",
+			"GetID",
+			"ShowIDsXML",
+			"wel",
+			"welcp",
+			"UsualSerieName",
+			"UsualSerieNameUsualSerieName",
+			"GetUsualSerieName",
+			");\n",
+			"area=Serie",
+			"lastupdated-alt",
+			"type",
+			"RemoveEpisode",
+			"Remove",
+			"ajaxQuery",
+			"Show",
+			"      case 'SerieLinkEmpty':        return( '<p><a href=\"?area=Serie&id='.$Param[1].'&TVDBv2=1\">'.$Param[0].'</a></p>' );\nSerieLinkEmpty",
+			"SerieLinkEmpty",
+			"Episodes",
+			"last_dbupdate-alt	",
+			"GetALl",
+			"DlTableItem.Empty",
+			"UserFavoritesGetNext",
+			"&& 1",
+			"UserFavoritesGetNext",
+			"Updates:",
+			"xml",
+			"file_distant_",
+			"file_distant_base",
+			"file_full",
+			"file_base",
+			"EpisodeList",
+			"xml",
+			"GetAllUnSeenEpisodes",
+			"GetAllUnSeenEpisodes ",
+			"favorite",
+			"favor",
+			"Cron_UserFavorites(",
+			"function print_r_pre",
+			"favorite",
+			"method",
+			"CountEp",
+			"Count",
+			"Query",
+			"InsertEpisode",
+			"DataBase::",
+			"copy",
+			"passed_filePrefix",
+			"Update banner",
+			"GetJPG",
+			"UpdateJPG",
+			"GetJPG",
+			"UpdateJPG",
+			"TVDBv2",
+			"file_method",
+			"SerieFileMethod",
+			"GetEpisodeFromTVDBv2",
+			"GetValuesFromTVDB",
+			"FromXML",
+			"new Serie",
+			"new Episode",
+			"Episode",
+			"print_r_",
+			"GetEpisodeFromDB",
+			"Downloaded",
+			"Custom",
+			"FirstAired",
+			"UpdaetJPG",
+			"_v3",
+			"= ",
+			"_v3",
+			"GetValuesFromDB",
+			"Actors",
+			"json_e",
+			"class_Content.php",
+			"CURLOPT_HTTPHEADER",
+			"_DEBUG",
+			"ForceDistantXML",
+			"DistantXML",
+			"ForceDistantXML",
+			"FileMethodXMLDistant",
+			"Serie in Database",
+			"_NULL",
+			"SerieLink",
+			"str_get_html",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"DataBase :: "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.htm",
+					"settings":
+					{
+						"buffer_size": 10736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1439,
+								1439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/W/Sites/Series_v3/Series_v3.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true
+}
